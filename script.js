@@ -5,28 +5,49 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+if (menuBtn && navLinks) {
+
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+}
 
 
-// Close menu after clicking a link
+// ========================================
+// CLOSE MOBILE MENU
+// ========================================
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+document.querySelectorAll(".nav-links a").forEach((link) => {
 
     link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+
+        if (navLinks) {
+            navLinks.classList.remove("active");
+        }
+
     });
 
 });
+
 
 // ========================================
 // SCROLL REVEAL ANIMATION
 // ========================================
 
 const revealElements = document.querySelectorAll(
-    "section, .project-card, .skill-card, .info-card, .experience-card"
+    ".section-heading, " +
+    ".quick-stats, " +
+    ".about-content, " +
+    ".skill-card, " +
+    ".tech-category, " +
+    ".project-card, " +
+    ".experience-card, " +
+    ".education-card, " +
+    ".certificate-card, " +
+    ".contact-card"
 );
+
 
 const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -34,7 +55,12 @@ const revealObserver = new IntersectionObserver(
         entries.forEach((entry) => {
 
             if (entry.isIntersecting) {
+
                 entry.target.classList.add("show");
+
+                // Animation ek baar hi chale
+                revealObserver.unobserve(entry.target);
+
             }
 
         });
@@ -45,8 +71,13 @@ const revealObserver = new IntersectionObserver(
     }
 );
 
-revealElements.forEach((element) => {
-    element.classList.add("reveal");
-    revealObserver.observe(element);
-});
 
+// Add reveal class and observe elements
+
+revealElements.forEach((element) => {
+
+    element.classList.add("reveal");
+
+    revealObserver.observe(element);
+
+});
