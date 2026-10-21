@@ -1,15 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="description" content="Vishnu Jangid - Full Stack Developer portfolio showcasing skills, projects and education.">
 
     <title>Vishnu Jangid | Full Stack Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
@@ -18,15 +20,13 @@
     ======================================== -->
 
     <header>
-
         <nav class="navbar">
 
             <a href="#home" class="logo">
                 Vishnu<span>.</span>
             </a>
 
-
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
 
                 <li>
                     <a href="#home">Home</a>
@@ -54,31 +54,31 @@
 
             </ul>
 
-
-            <button class="menu-btn" id="menu-btn">
+            <button
+                class="menu-btn"
+                id="menu-btn"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="nav-links"
+                aria-expanded="false">
                 ☰
             </button>
-
 
             <a href="#contact" class="nav-btn">
                 Let's Talk
             </a>
 
         </nav>
-
     </header>
 
 
-
     <main>
-
 
         <!-- ========================================
              HERO SECTION
         ======================================== -->
 
         <section id="home" class="hero">
-
 
             <!-- Left Content -->
 
@@ -88,16 +88,13 @@
                     WELCOME TO MY PORTFOLIO
                 </p>
 
-
                 <h1>
                     Hi, I'm <span>Vishnu Jangid</span>
                 </h1>
 
-
                 <h2>
                     Full Stack Developer
                 </h2>
-
 
                 <p class="hero-description">
                     I build modern, responsive and user-friendly web
@@ -105,17 +102,17 @@
                     web technologies.
                 </p>
 
-
                 <div class="hero-buttons">
 
                     <a href="#projects" class="btn primary-btn">
                         View My Work
                     </a>
 
-
-                    <a href="assets/resume.pdf"
-                       class="btn secondary-btn"
-                       target="_blank">
+                    <a
+                        href="assets/resume.pdf"
+                        class="btn secondary-btn"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         View Resume
                     </a>
 
@@ -124,19 +121,18 @@
             </div>
 
 
-
             <!-- Right Visual -->
 
             <div class="hero-visual">
 
                 <div class="hero-glow"></div>
 
-
                 <div class="profile-wrapper">
 
-                    <img src="assets/profile.jpg"
-                         alt="Vishnu Jangid"
-                         class="profile-image">
+                    <img
+                        src="assets/profile.jpg"
+                        alt="Vishnu Jangid"
+                        class="profile-image">
 
                 </div>
 
@@ -144,21 +140,49 @@
                 <!-- Floating Tech Badges -->
 
                 <div class="tech-badge badge-js">
+                    <span class="badge-dot"></span>
                     JavaScript
                 </div>
 
                 <div class="tech-badge badge-node">
+                    <span class="badge-dot"></span>
                     Node.js
                 </div>
 
                 <div class="tech-badge badge-db">
+                    <span class="badge-dot"></span>
                     MongoDB
                 </div>
+
+                <div class="tech-badge badge-react">
+                    <span class="badge-dot"></span>
+                    React.js
+                </div>
+
+                <div class="tech-badge badge-express">
+                    <span class="badge-dot"></span>
+                    Express.js
+                </div>
+
+                <div class="tech-badge badge-java">
+                    <span class="badge-dot"></span>
+                    Java
+                </div>
+
+                <a
+                    href="https://github.com/Vishnu8252"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="tech-badge badge-github">
+
+                    <span class="badge-dot"></span>
+                    GitHub ↗
+
+                </a>
 
             </div>
 
         </section>
-
 
 
         <!-- ========================================
@@ -174,9 +198,6 @@
                 <p>CGPA</p>
 
             </div>
-
-
- 
 
 
             <div class="stat-card">
@@ -199,7 +220,6 @@
         </section>
 
 
-
         <!-- ========================================
              ABOUT SECTION
         ======================================== -->
@@ -219,7 +239,6 @@
 
             <div class="about-content">
 
-
                 <div class="about-text">
 
                     <h3>
@@ -227,20 +246,17 @@
                         <span>code & creativity.</span>
                     </h3>
 
-
                     <p>
                         I'm Vishnu Jangid, a Computer Science Engineering
                         student at IPS Academy, Indore and a Full Stack
                         Developer.
                     </p>
 
-
                     <p>
                         I enjoy building responsive web applications and
                         working with technologies like JavaScript, Node.js,
                         Express.js, MongoDB and MySQL.
                     </p>
-
 
                     <p>
                         Along with development, I'm strengthening my skills in
@@ -251,9 +267,7 @@
                 </div>
 
 
-
                 <div class="about-info">
-
 
                     <div class="info-card">
 
@@ -301,7 +315,6 @@
         </section>
 
 
-
         <!-- ========================================
              SKILLS SECTION
         ======================================== -->
@@ -321,13 +334,14 @@
 
             <div class="skills-grid">
 
-
                 <div class="skill-card">
 
                     <h3>Languages</h3>
 
                     <p>Java</p>
+
                     <p>JavaScript</p>
+
                     <p>SQL</p>
 
                 </div>
@@ -338,8 +352,11 @@
                     <h3>Frontend</h3>
 
                     <p>HTML</p>
+
                     <p>CSS</p>
+
                     <p>Bootstrap</p>
+
                     <p>Tailwind CSS</p>
 
                 </div>
@@ -350,7 +367,9 @@
                     <h3>Backend</h3>
 
                     <p>Node.js</p>
+
                     <p>Express.js</p>
+
                     <p>REST APIs</p>
 
                 </div>
@@ -361,6 +380,7 @@
                     <h3>Database</h3>
 
                     <p>MongoDB</p>
+
                     <p>MySQL</p>
 
                 </div>
@@ -371,8 +391,11 @@
                     <h3>Tools</h3>
 
                     <p>Git</p>
+
                     <p>GitHub</p>
+
                     <p>VS Code</p>
+
                     <p>Eclipse</p>
 
                 </div>
@@ -383,7 +406,9 @@
                     <h3>Core</h3>
 
                     <p>DSA</p>
+
                     <p>OOP</p>
+
                     <p>DBMS</p>
 
                 </div>
@@ -393,99 +418,9 @@
         </section>
 
 
-
         <!-- ========================================
              TECH STACK
         ======================================== -->
-
-        <section id="tech-stack">
-
-            <div class="section-heading">
-
-                <p>MY TECHNOLOGIES</p>
-
-                <h2>
-                    Tech Stack
-                </h2>
-
-            </div>
-
-
-            <p class="section-subtitle">
-                Technologies and tools I use to build web applications.
-            </p>
-
-
-            <div class="tech-stack-grid">
-
-
-                <div class="tech-category">
-
-                    <h3>Frontend</h3>
-
-                    <div class="tech-list">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>React.js</span>
-                        <span>Bootstrap</span>
-                        <span>Tailwind CSS</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech-category">
-
-                    <h3>Backend</h3>
-
-                    <div class="tech-list">
-
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>REST APIs</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech-category">
-
-                    <h3>Database</h3>
-
-                    <div class="tech-list">
-
-                        <span>MongoDB</span>
-                        <span>MySQL</span>
-                        <span>DBMS</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech-category">
-
-                    <h3>Tools & Platforms</h3>
-
-                    <div class="tech-list">
-
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>VS Code</span>
-                        <span>Eclipse</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
 
 
         <!-- ========================================
@@ -514,11 +449,12 @@
 
                 <div class="project-card">
 
-
                     <div class="project-gallery">
 
-                        <img src="assets/wanderlust/home.png"
-                             alt="Wanderlust Home Page">
+                        <img
+                            src="assets/wanderlust/home.png"
+                            alt="Wanderlust Home Page"
+                            loading="lazy">
 
                     </div>
 
@@ -529,11 +465,9 @@
                             Full Stack Web Application
                         </span>
 
-
                         <h3>
                             Wanderlust
                         </h3>
-
 
                         <p>
                             A full-stack travel listing platform inspired
@@ -545,9 +479,13 @@
                         <div class="project-tech">
 
                             <span>Node.js</span>
+
                             <span>Express.js</span>
+
                             <span>MongoDB</span>
+
                             <span>JavaScript</span>
+
                             <span>EJS</span>
 
                         </div>
@@ -555,17 +493,22 @@
 
                         <div class="project-links">
 
-                            <a href="https://github.com/Vishnu8252/Wanderlust"
-                               target="_blank"
-                               rel="noopener noreferrer">
+                            <a
+                                href="https://github.com/Vishnu8252/Wanderlust"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
                                 GitHub ↗
+
                             </a>
 
+                            <a
+                                href="https://wanderlust-rjjm.onrender.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
 
-                            <a href="https://wanderlust-rjjm.onrender.com/"
-                               target="_blank"
-                               rel="noopener noreferrer">
                                 Live Demo ↗
+
                             </a>
 
                         </div>
@@ -575,18 +518,18 @@
                 </div>
 
 
-
                 <!-- ========================================
                      ATTENDIX
                 ======================================== -->
 
                 <div class="project-card">
 
-
                     <div class="project-gallery">
 
-                        <img src="assets/attendix/attendix.png"
-                             alt="Attendix Attendance Dashboard">
+                        <img
+                            src="assets/attendix/attendix.png"
+                            alt="Attendix Attendance Dashboard"
+                            loading="lazy">
 
                     </div>
 
@@ -597,11 +540,9 @@
                             Full Stack Web Application
                         </span>
 
-
                         <h3>
                             Attendix
                         </h3>
-
 
                         <p>
                             A full-stack school attendance management system
@@ -613,23 +554,34 @@
                         <div class="project-tech">
 
                             <span>React.js</span>
+
                             <span>Node.js</span>
+
                             <span>Express.js</span>
+
                             <span>MongoDB</span>
 
                         </div>
 
 
                         <div class="project-links">
- <a href="https://github.com/Vishnu8252/ATTENDIX"
-                               target="_blank"
-                               rel="noopener noreferrer">
+
+                            <a
+                                href="https://github.com/Vishnu8252/ATTENDIX"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
                                 GitHub ↗
+
                             </a>
-                            <a href="https://attendix-jade.vercel.app"
-                               target="_blank"
-                               rel="noopener noreferrer">
+
+                            <a
+                                href="https://attendix-jade.vercel.app"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
                                 Live Demo ↗
+
                             </a>
 
                         </div>
@@ -641,7 +593,6 @@
             </div>
 
         </section>
-
 
 
         <!-- ========================================
@@ -744,7 +695,6 @@
         </section>
 
 
-
         <!-- ========================================
              CERTIFICATIONS
         ======================================== -->
@@ -781,26 +731,26 @@
 
                     </div>
 
-
                     <h3>
                         Object Oriented Programming in Java
                     </h3>
-
 
                     <p>
                         IBM certification in Object Oriented
                         Programming using Java.
                     </p>
 
+                    <a
+                        href="assets/certificates/ibm-java.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="certificate-btn">
 
-                    <a href="assets/certificates/ibm-java.pdf"
-                       target="_blank"
-                       class="certificate-btn">
                         View Certificate ↗
+
                     </a>
 
                 </div>
-
 
 
                 <!-- Web Development -->
@@ -819,26 +769,26 @@
 
                     </div>
 
-
                     <h3>
                         Web Development Basics
                     </h3>
-
 
                     <p>
                         Certificate covering the fundamentals
                         of web development.
                     </p>
 
+                    <a
+                        href="assets/certificates/web-development.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="certificate-btn">
 
-                    <a href="assets/certificates/web-development.pdf"
-                       target="_blank"
-                       class="certificate-btn">
                         View Certificate ↗
+
                     </a>
 
                 </div>
-
 
 
                 <!-- NPTEL -->
@@ -857,22 +807,23 @@
 
                     </div>
 
-
                     <h3>
                         Database Management Systems
                     </h3>
-
 
                     <p>
                         NPTEL certification related to Database
                         Management Systems.
                     </p>
 
+                    <a
+                        href="assets/certificates/nptel-dbms.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="certificate-btn">
 
-                    <a href="assets/certificates/nptel-dbms.pdf"
-                       target="_blank"
-                       class="certificate-btn">
                         View Certificate ↗
+
                     </a>
 
                 </div>
@@ -882,13 +833,11 @@
         </section>
 
 
-
         <!-- ========================================
              CONTACT
         ======================================== -->
 
         <section id="contact" class="contact">
-
 
             <div class="contact-container">
 
@@ -901,12 +850,10 @@
                         GET IN TOUCH
                     </p>
 
-
                     <h2>
                         Let's build something
                         <span>great together.</span>
                     </h2>
-
 
                     <p class="contact-text">
                         I'm currently looking for internship and entry-level
@@ -914,15 +861,17 @@
                         want to connect, feel free to reach out.
                     </p>
 
+                    <a
+                        href="assets/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-resume">
 
-                    <a href="assets/resume.pdf"
-                       target="_blank"
-                       class="contact-resume">
                         View My Resume ↗
+
                     </a>
 
                 </div>
-
 
 
                 <!-- Right Side -->
@@ -932,15 +881,15 @@
 
                     <!-- Email -->
 
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vishnujangid8252@gmail.com"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="contact-card">
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=vishnujangid8252@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card">
 
                         <div class="contact-icon">
                             @
                         </div>
-
 
                         <div>
 
@@ -952,7 +901,6 @@
 
                         </div>
 
-
                         <div class="contact-arrow">
                             ↗
                         </div>
@@ -960,18 +908,17 @@
                     </a>
 
 
-
                     <!-- LinkedIn -->
 
-                    <a href="https://www.linkedin.com/in/vishnujangid-cse/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="contact-card">
+                    <a
+                        href="https://www.linkedin.com/in/vishnujangid-cse/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card">
 
                         <div class="contact-icon">
                             in
                         </div>
-
 
                         <div>
 
@@ -983,7 +930,6 @@
 
                         </div>
 
-
                         <div class="contact-arrow">
                             ↗
                         </div>
@@ -991,18 +937,17 @@
                     </a>
 
 
-
                     <!-- GitHub -->
 
-                    <a href="https://github.com/Vishnu8252"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="contact-card">
+                    <a
+                        href="https://github.com/Vishnu8252"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card">
 
                         <div class="contact-icon">
                             &lt;/&gt;
                         </div>
-
 
                         <div>
 
@@ -1013,7 +958,6 @@
                             </h3>
 
                         </div>
-
 
                         <div class="contact-arrow">
                             ↗
@@ -1027,9 +971,7 @@
 
         </section>
 
-
     </main>
-
 
 
     <!-- ========================================
@@ -1039,11 +981,11 @@
     <footer>
 
         <p>
-            © 2026 Vishnu Jangid. All Rights Reserved.
+            © <span id="current-year">2026</span>
+            Vishnu Jangid. All Rights Reserved.
         </p>
 
     </footer>
-
 
 
     <!-- ========================================
@@ -1052,6 +994,46 @@
 
     <script src="script.js"></script>
 
-</body>
+    <script>
+        // Update copyright year automatically
+        const yearElement = document.getElementById("current-year");
 
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+        // Mobile navigation
+        const menuButton = document.getElementById("menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuButton && navLinks) {
+
+            menuButton.addEventListener("click", function () {
+
+                const isOpen = navLinks.classList.toggle("active");
+
+                menuButton.setAttribute("aria-expanded", String(isOpen));
+
+                menuButton.textContent = isOpen ? "✕" : "☰";
+
+            });
+
+            navLinks.querySelectorAll("a").forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    navLinks.classList.remove("active");
+
+                    menuButton.setAttribute("aria-expanded", "false");
+
+                    menuButton.textContent = "☰";
+
+                });
+
+            });
+
+        }
+    </script>
+
+</body>
 </html>

@@ -277,41 +277,71 @@ section {
    TECH BADGES
 ======================================== */
 
+
+
+
 .tech-badge {
     position: absolute;
     z-index: 3;
-
     padding: 9px 16px;
-
     background: #151515;
     border: 1px solid #292929;
     border-radius: 20px;
-
     color: #00e5ff;
-
     font-size: 12px;
     font-weight: 600;
-
+    white-space: nowrap;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-
     animation: badgeFloat 4s ease-in-out infinite;
 }
 
+/* Top-left */
 .badge-js {
     top: 20%;
-    left: 5%;
+    left: 0%;
 }
 
+/* Bottom-right */
 .badge-node {
     bottom: 20%;
-    right: 5%;
+    right: 0%;
     animation-delay: 1s;
 }
 
+/* Top-right */
 .badge-db {
     top: 10%;
-    right: 5%;
+    right: 0%;
     animation-delay: 2s;
+}
+
+/* Left-middle */
+.badge-react {
+    top: 40%;
+    left: -3%;
+    animation-delay: 0.5s;
+}
+
+/* Right-middle */
+.badge-express {
+    top: 55%;
+    right: -3%;
+    animation-delay: 1.5s;
+}
+
+/* Bottom-left */
+.badge-java {
+    bottom: 10%;
+    left: 5%;
+    animation-delay: 2.5s;
+}
+
+/* GitHub — above the photo, not on the face */
+.badge-github {
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 3s;
 }
 
 
@@ -352,32 +382,42 @@ section {
 }
 
 /* ========================================
-   QUICK STATS
+   QUICK STATS - FIXED ALIGNMENT
 ======================================== */
 
 .quick-stats {
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 30px 30px 70px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    align-items: stretch;
 }
 
 .stat-card {
-    text-align: center;
+    min-width: 0;
+    min-height: 130px;
     padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
     background: #111;
     border: 1px solid #222;
-    border-radius: 16px;
+    border-radius: 18px;
 
     transition: 0.3s ease;
 }
 
 .stat-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     border-color: #00e5ff;
     box-shadow: 0 12px 30px rgba(0, 229, 255, 0.08);
 }
@@ -385,13 +425,28 @@ section {
 .stat-card h3 {
     color: #00e5ff;
     font-size: 28px;
-    margin-bottom: 5px;
+    line-height: 1.3;
+    margin-bottom: 10px;
 }
 
 .stat-card p {
     color: #aaa;
     font-size: 14px;
 }
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .quick-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 25px 20px 50px;
+    }
+
+    .stat-card {
+        min-height: 110px;
+    }
+}
+
 
 
 /* ========================================
@@ -564,71 +619,6 @@ section {
 /* ========================================
    TECH STACK
 ======================================== */
-
-.section-subtitle {
-    color: #888;
-    text-align: center;
-
-    margin-top: -25px;
-    margin-bottom: 40px;
-
-    font-size: 15px;
-}
-
-.tech-stack-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-
-    margin-top: 40px;
-}
-
-.tech-category {
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 18px;
-
-    padding: 28px;
-
-    transition: 0.3s ease;
-}
-
-.tech-category:hover {
-    transform: translateY(-6px);
-    border-color: #00e5ff;
-    box-shadow: 0 15px 35px rgba(0, 229, 255, 0.07);
-}
-
-.tech-category h3 {
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 18px;
-}
-
-.tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.tech-list span {
-    padding: 8px 14px;
-
-    background: #0a0a0a;
-    border: 1px solid #292929;
-    border-radius: 20px;
-
-    color: #bbb;
-    font-size: 13px;
-
-    transition: 0.3s ease;
-}
-
-.tech-list span:hover {
-    color: #00e5ff;
-    border-color: #00e5ff;
-    transform: translateY(-2px);
-}
 
 
 /* ========================================
@@ -1843,3 +1833,4 @@ footer span {
         font-size: 15px;
     }
 }
+
